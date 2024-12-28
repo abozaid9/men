@@ -1,0 +1,76 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: #fff;
+  height: 2000px;
+  /* direction: rtl; */
+}
+.hero_section {
+  background-color: rgb(216, 214, 214);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.item1,
+.item2 {
+  width: 50%;
+}
+button {
+  background-color: #007bff;
+  border: 0;
+  padding: 14px;
+  margin-top: 14px;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .hero_section {
+    flex-direction: column;
+  }
+  .item1,
+  .item2 {
+    width: 100%;
+  }
+  h1,
+  p {
+    font-size: 16px;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+  }
+  button {
+    text-align: center;
+    width: 150px;
+    margin: auto;
+    margin-left: 125px;
+    margin-top: 20px;
+  }
+}
+.animation_simple{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: black;
+  animation-name:circle;
+  animation-duration: 4s;
+  animation-iteration-count:	infinite;
+
+  position: relative;
+  animation-timing-function:ease-in;
+
+}
+@keyframes circle {
+  
+
+  0%   {background-color:red; left:0px; top:100px;}
+  25%  {background-color:yellow; left:400px; top:600px;}
+  50%  {background-color:blue; left:100px; top:700px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+  
+}
